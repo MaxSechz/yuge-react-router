@@ -20,7 +20,7 @@ function renderByTypeof(component, props) {
 }
 
 export default function createRouter(routes: Routes, { regexBuilder = RegExp, notFound }: Options = {}) {
-  const regexRoutes = map(routes, (page, route) => ({ routeRegex: regexBuilder(route), page }));
+  const regexRoutes = map(routes, (pageComponent, route) => ({ routeRegex: regexBuilder(route), pageComponent }));
 
   return ({ route }: { route: string }) => {
     for (let routeIndex = 0; routeIndex < regexRoutes.length; routeIndex++) {
