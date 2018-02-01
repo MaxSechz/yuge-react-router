@@ -1,6 +1,6 @@
 {
   "name": "yuge-react-router",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "a YUGE router for react, its just, just the best!",
   "main": "lib/index.js",
   "author": "Maxwell Sechzer <maxwell.sechzer@gmail.com>",
